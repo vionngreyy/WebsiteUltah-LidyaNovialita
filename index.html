@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff2e88" />
+    <meta name="description" content="Ucapan selamat ulang tahun — buka, tiup lilin, dan tinggalkan pesan manis." />
+    <meta property="og:title" content="Happy Birthday! 🎂" />
+    <meta property="og:description" content="Sebuah kejutan ulang tahun dengan ucapan, musik, dan dinding harapan." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/ai/hero.svg" />
+    <title>Happy Birthday! 🎂</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Tampilan sementara sebelum React dimuat -->
+      <div class="gate">
+        <div class="ticker" aria-hidden="true">
+          <div class="ticker-track">
+            <span>MEMUAT UCAPAN ✦ BIRTHDAY SURPRISE ✦&nbsp;</span>
+            <span>MEMUAT UCAPAN ✦ BIRTHDAY SURPRISE ✦&nbsp;</span>
+          </div>
+        </div>
+        <div class="gate-inner">
+          <div class="gate-copy">
+            <span class="kicker gate-kicker">BIRTHDAY SURPRISE · 2026</span>
+            <div class="gate-title-wrap">
+              <h1 class="gate-name" aria-label="SURPRISE">SURPRISE</h1>
+              <div class="gate-subline"><span>SELAMAT ULANG TAHUN</span><i></i><span>MAKE A WISH</span></div>
+            </div>
+            <p>Hari ini bukan sekadar tanggal di kalender. Buka ucapannya, ya!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="boot-cover" aria-hidden="true">
+      <style>
+        body { overflow: hidden; overscroll-behavior: none; }
+        #boot-cover {
+          position: fixed;
+          inset: 0;
+          z-index: 9999;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background: linear-gradient(135deg, #fff8fb, #ffe0ec 55%, #ffc2dc);
+          animation: bcOut .5s ease .6s forwards;
+        }
+        @keyframes bcOut { to { opacity: 0; visibility: hidden; pointer-events: none; } }
+        .bc-inner { position: relative; padding: 0 24px; }
+        .bc-kicker {
+          display: inline-block;
+          font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+          font-size: .62rem;
+          letter-spacing: .16em;
+          color: #d9166b;
+          border: 1px solid rgba(255,46,136,.3);
+          padding: 8px 12px;
+          border-radius: 999px;
+          background: rgba(255,255,255,.75);
+        }
+        .bc-name {
+          margin: 22px 0 12px;
+          color: #ff2e88;
+          font-weight: 800;
+          text-transform: uppercase;
+          line-height: .85;
+          letter-spacing: -.07em;
+          font-size: clamp(3.6rem, 13vw, 9rem);
+          text-shadow: 0 12px 28px rgba(255,46,136,.22);
+        }
+        .bc-subline {
+          font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+          font-size: .62rem;
+          letter-spacing: .14em;
+          color: #8b6c7c;
+        }
+        .is-done { opacity: 0; transition: opacity .45s ease; pointer-events: none; }
+        @media (prefers-reduced-motion: reduce) { #boot-cover { animation-duration: 0s; } }
+      </style>
+      <div class="bc-inner">
+        <span class="bc-kicker">BIRTHDAY SURPRISE · 2026</span>
+        <h1 class="bc-name">SURPRISE</h1>
+        <div class="bc-subline">HAPPY BIRTHDAY — MAKE A WISH ✦</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
