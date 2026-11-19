@@ -68,7 +68,7 @@ export const siteData = {
       kicker: 'A LITTLE ABOUT YOU',
       top: 'Beberapa alasan',
       emphasis: 'kamu istimewa.',
-      sub: 'Tidak perlu panjang. Cukup yang paling sering bikin kami senyum.',
+      sub: 'Tidak perlu panjang. Cukup yang paling sering bikin semua senyum.',
     },
     notes: {
       kicker: 'BEFORE YOU SCROLL',
