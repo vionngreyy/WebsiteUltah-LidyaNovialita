@@ -247,8 +247,8 @@ img { display: block; max-width: 100%; }
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  font-size: clamp(5rem, 13vw, 12rem);
-  line-height: .78;
+  font-size: clamp(4rem, 7vw, 7rem);
+  line-height: .86;
   letter-spacing: -.085em;
   font-weight: 800;
   text-transform: uppercase;
@@ -257,6 +257,11 @@ img { display: block; max-width: 100%; }
   background-clip: text;
   color: transparent;
   filter: drop-shadow(0 12px 18px rgba(255,46,136,.18));
+}
+.gate-name .wave-char:nth-child(6) {
+  flex: 0 0 100%;
+  height: 0;
+  line-height: 0;
 }
 .wave-char {
   display: inline-block;
@@ -1360,7 +1365,13 @@ img { display: block; max-width: 100%; }
   .ticker { height: 32px; }
   .ticker span { font-size: .56rem; gap: 13px; padding-right: 13px; }
   .gate-inner { padding: 82px 18px 34px; }
-  .gate-name { font-size: clamp(3rem, 15vw, 4.8rem); line-height: .84; }
+  .gate-name {
+    font-size: clamp(2.4rem, 9vw, 3.4rem);
+    line-height: .9;
+    letter-spacing: -.07em;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
   .gate-subline { font-size: .6rem; }
   .gate-copy > p { font-size: .88rem; line-height: 1.6; }
   .gate .btn { min-height: 48px; font-size: .85rem; }
@@ -1417,7 +1428,14 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 390px) {
-  .gate-name, .hero h1 { font-size: clamp(2.7rem, 14vw, 3.8rem); }
+  .gate-name {
+    font-size: clamp(2rem, 8.5vw, 2.6rem);
+    line-height: .9;
+    letter-spacing: -.07em;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+  .hero h1 { font-size: clamp(2.7rem, 14vw, 3.8rem); }
   .section-pad { padding-inline: 15px; }
   .preview-card { grid-template-columns: 58px 1fr; }
   .preview-card img { width: 58px; height: 58px; }
@@ -1524,7 +1542,13 @@ body { overflow-wrap: break-word; }
   .surprise-art { min-height: 300px; }
   .surprise-art::before { width: min(100%, 300px); }
   .surprise-art .cake-art { transform: scale(.7); }
-  .gate-name { font-size: clamp(2.5rem, 13vw, 3.4rem); }
+  .gate-name {
+    font-size: clamp(2rem, 8.5vw, 2.6rem);
+    line-height: .9;
+    letter-spacing: -.07em;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
   .hero h1 { font-size: clamp(2.6rem, 13vw, 3.5rem); }
   .closing-name h2 { font-size: clamp(2.6rem, 13vw, 3.5rem); }
   .countdown-cell strong { font-size: 2.3rem; }

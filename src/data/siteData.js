@@ -6,7 +6,7 @@
 
 export const siteData = {
   // Nama penerima (WAJIB diganti sebelum web dikirim)
-  name: 'Lidya  Novialita',
+  name: 'Lidya Novialita',
   age: '24',
   year: '2026',
 
