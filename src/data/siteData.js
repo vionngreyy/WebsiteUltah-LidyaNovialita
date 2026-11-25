@@ -38,7 +38,7 @@ export const siteData = {
   littleNotes: [
     'Kalau mau, tiup lilinnya dulu sebelum baca ucapan. Jangan lupa tutup mata dan buat harapan.',
     'Tulis pesan di bagian ucapan, satu kalimat sangat berarti dan penuh kebahagiaan.',
-    'Semua kejutan ini dibuat khusus untuk kamu di hari yang spesial ini, semoga suka ya.',
+    'Semua kejutan ini dibuat khusus untuk Lidya di hari yang spesial ini, semoga semua harapan terwujud.',
   ],
 
   messageTemplates: [
